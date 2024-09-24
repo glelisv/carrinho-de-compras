@@ -4,22 +4,12 @@ function adicionar() {
     let valorUnitario = produto.split('R$')[1];
     let quantidade = document.getElementById('quantidade').value;
 
-    alert(nomeProduto);
-    alert(valorUnitario);
-    alert(quantidade);
-
     let preco = quantidade * valorUnitario;
-    alert(preco);
+    let carrinho = document.getElementById('lista-produtos');
+    carrinho.innerHTML = carrinho.innerHTML + `        <section class="carrinho__produtos__produto">
+          <span class="texto-azul">${quantidade}x</span> ${nomeProduto} <span class="texto-azul">R$${preco}</span>
+        </section>`
 
-    /*if(nomeProduto == "Fone de ouvido - R$100") {
-        //document.getElementById('lista-nomeProdutos').innerHTML = `<span class="texto-azul">${quantidade}x</span> Fone de ouvido <span class="texto-azul">R$100</span>`;
-        //total = total + (100 * quantidade);
-        alert(valor);
-    } else if (nomeProduto == "Celular - R$1400") {
-        alert("Celular");
-    } else if (nomeProduto == "Oculus VR - R$5000") {
-        alert("Oculus VR");
-    }*/
 }
 
 function limpar() {

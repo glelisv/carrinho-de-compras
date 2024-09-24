@@ -21,5 +21,10 @@ function adicionar() {
 }
 
 function limpar() {
+    totalGeral = 0;
+    carrinho = document.getElementById('lista-produtos');
+    carrinho.innerHTML = '';
+    campoTotal = document.getElementById('valor-total');
+    campoTotal.textContent = 'R$ 0';
 
 }

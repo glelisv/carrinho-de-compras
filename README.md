@@ -64,8 +64,3 @@ A lógica do carrinho de compras está implementada no arquivo `app.js`:
 - **Adição ao Carrinho**: Quando o usuário adiciona um produto, o carrinho é atualizado com o nome do produto, quantidade e subtotal.
 - **Cálculo Total**: O total da compra é recalculado sempre que um produto é adicionado ou removido.
 - **Remoção de Produtos**: O usuário pode remover produtos do carrinho e o total será ajustado automaticamente.
-
-## Personalizações
-
-- **Produtos Adicionais**: Para adicionar novos produtos, você pode editar o arquivo `index.html` para incluir mais opções de produtos, ou atualizar o `app.js` para incluir novas funcionalidades como descontos ou frete.
-- **Estilos**: Modifique o arquivo `style.css` para ajustar o layout e design de acordo com suas preferências.
